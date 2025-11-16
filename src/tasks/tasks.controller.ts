@@ -31,9 +31,9 @@ export class TasksController {
   @Post()
   public async createTask(@Body() createTaskDto: CreateTaskDto) {
     // Logic to create a new task
-    await this.taskService.CreateTask(createTaskDto)
+    return await this.taskService.CreateTask(createTaskDto)
 
-    return 'Task created successfully';
+    ;
 
   }
 

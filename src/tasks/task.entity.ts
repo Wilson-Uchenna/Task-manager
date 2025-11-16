@@ -19,7 +19,6 @@ export class Task {
     type: 'varchar',
     length: 255,
     nullable: false,
-    unique: true,
   })
   title: string;
 

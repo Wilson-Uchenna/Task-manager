@@ -2,6 +2,6 @@ POST http://localhost:3000/tasks
 Content-Type: application/json
 
 {
-  "title": "Two times Task from HTTP Client",
+  "title": "Jerry dey stress me",
   "description": "This task was created using an HTTP client."
 }
