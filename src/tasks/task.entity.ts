@@ -9,6 +9,8 @@ import {
 } from 'typeorm';
 import { TaskStatus } from '../tasks/enums/taskStatus.enum';
 import slugify from 'slugify';
+import { SlugifyProvider } from './providers/slugify.provider';
+
 
 @Entity()
 export class Task {
@@ -48,12 +50,4 @@ export class Task {
 
   @UpdateDateColumn({ type: 'timestamp' })
   updatedAt: Date;
-
-  @BeforeInsert()
-  @BeforeUpdate()
-  generateSlug() {
-    if (this.title) {
-      this.slug = slugify(this.title, { lower: true, strict: true });
-    }
-  }
 }

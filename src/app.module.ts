@@ -35,7 +35,6 @@ console.log('ENV FILE PATH:', !ENV ? '.env' : `.env.${ENV}`);
 
         return {
           type: 'postgres',
-          entities: [Task],
           synchronize: true,
           autoLoadEntities: true,
           port: +configService.get('DATABASE_PORT'),

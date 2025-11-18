@@ -1,0 +1,8 @@
+PATCH http://localhost:3000/tasks/26
+Content-Type: application/json
+
+{
+  "title": "Updated Task Title",
+  "description": "This is an updated description for the task.",
+  "status": "completed"
+}

@@ -3,7 +3,7 @@ import slugify from 'slugify';
 
 @Injectable()
 export class SlugifyProvider {
-async generateUniqueSlug( title: string) {
+generateUniqueSlug( title: string) {
     const baseSlug = slugify(title, { lower: true, strict: true });
 
     const timestamp = Date.now();
